@@ -5,17 +5,21 @@
 		],
 		"plugins":[]
 	}
+	
+#安装babel	
 	npm i --save-dev babel-preset-es2015 //安装es2015
 	
 	npm i --global babel-cli//命令行转码
 	
 	npm i --save-dev babel-cli  //安装在项目中
-	
+
+#设定命令	
 	'package.json':
 		"scripts": {
 			"build": "babel src -d lib"   //设置指定命令   npm run build
 		},
 	
+#转码文件	
 	babel a.js   //a.js中的代码转码输出到控制台
 	
 	babel a.js -o b.js  //a.js 转码输出到b.js
